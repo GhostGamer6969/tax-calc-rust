@@ -1,0 +1,30 @@
+import { Button, VerticalBox, LineEdit } from "std-widgets.slint";
+
+export component AppWindow inherits Window {
+    always-on-top: true;
+    GridLayout {
+        padding: 50px;
+        spacing: 25px;
+        Row {
+            Text {
+                text: "Enter total income";
+                horizontal-alignment: center;
+                font-size: 24px;
+                font-weight: 900;
+            }
+        }
+
+        Row {
+            LineEdit {
+                font-size: 16px;
+                placeholder-text: "Enter your number";
+            }
+        }
+
+        Row {
+            Button {
+                text: "Calculate";
+            }
+        }
+    }
+}
